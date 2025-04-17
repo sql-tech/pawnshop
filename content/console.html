@@ -844,7 +844,7 @@
             async function uploadToGitHub(token, path, base64Content, fileName) {
                 console.log('開始上傳至 GitHub: ' + path);
                 try {
-                    const repo = 'sql-tech/pzwnshop'; //更改Github倉庫位置，如：sql-tech/pzwnshop
+                    const repo = 'sql-tech/pawnshop'; //更改Github倉庫位置，如：sql-tech/pawnshop
                     let sha = null;
                     try {
                         const getResponse = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
